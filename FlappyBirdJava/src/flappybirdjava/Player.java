@@ -6,9 +6,9 @@ import jplay.Keyboard;
 import jplay.Sprite;
 import jplay.URL;
 import jplay.Window;
-public class Jogador extends Sprite{
+public class Player extends Sprite{
     double velocidade=1.3;
-    public Jogador(int x,int y) {
+    public Player(int x,int y) {
         super(("src/image/bird.png"),1);
         this.setTotalDuration((long)2000);
         this.x=x;

@@ -10,7 +10,7 @@ import jplay.URL;
 import jplay.Window;
 public class Nivel{
     private Window janela;
-    private Jogador jogador;
+    private Player jogador;
     private Keyboard teclado;
     private GameImage imagem_fundo;
     public int nobstaculos=4;
@@ -31,7 +31,7 @@ public class Nivel{
         this.janela=window;
         teclado=janela.getKeyboard();
         imagem_fundo=new GameImage("src/image/background.png");
-        jogador=new Jogador(25,250);
+        jogador=new Player(25,250);
         mostrarPontos(janela);
         
         for (int i=0,j=1; i<nobstaculos; i++,j++) {

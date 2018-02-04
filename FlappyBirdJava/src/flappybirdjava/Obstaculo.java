@@ -54,7 +54,7 @@ public class Obstaculo extends Sprite{
             }
         } 
     
-    public boolean colisao(Jogador jogador){
+    public boolean colisao(Player jogador){
         if(((jogador.x>=this.x)&&(jogador.x<this.x+width))&&((jogador.y>=this.y)&&(jogador.y<this.y+height))){
             return true;
         }else
