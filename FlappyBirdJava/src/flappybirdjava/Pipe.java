@@ -1,14 +1,13 @@
 package flappybirdjava;
 import jplay.Sprite;
-import jplay.URL;
-public class Obstaculo extends Sprite{
-    double velocidade=0.7;
-    int posicao;
-    public Obstaculo(int aleatorio,int x) {
+public class Pipe extends Sprite{
+    double velocity=0.7;
+    int position;
+    public Pipe(int random,int x) {
         super("src/image/pipe.png",1);
         this.x=x;
-        this.posicao=aleatorio;
-        switch(aleatorio){
+        this.position=random;
+        switch(random){
             case 0:
                 this.y=300; 
                 break;
@@ -29,11 +28,11 @@ public class Obstaculo extends Sprite{
             }
         }       
     
-    public Obstaculo(int aleatorio,int x,int i){
+    public Pipe(int random,int x,int i){
         super("src/image/pipe2.png",1);
         this.x=x;
-        this.posicao=aleatorio;
-        switch(aleatorio){
+        this.position=random;
+        switch(random){
             case 0:
                 this.y=-150;
                 break;
@@ -54,17 +53,19 @@ public class Obstaculo extends Sprite{
             }
         } 
     
-    public boolean colisao(Player jogador){
-        if(((jogador.x>=this.x)&&(jogador.x<this.x+width))&&((jogador.y>=this.y)&&(jogador.y<this.y+height))){
+    public boolean collide(Player player){
+        if(((player.x>=this.x)&&(player.x<this.x+width))&&((player.y>=this.y)&&(player.y<this.y+height))){
             return true;
         }else
         return false;
     }
-    public void mover(){
-        this.x-=velocidade;
+    
+    public void move(){
+        this.x-=velocity;
     }
-    public void atualizar(int aleatorio){
-        switch(aleatorio){
+    
+    public void update(int random){
+        switch(random){
             case 0:
                 this.y=300; 
                 break;
@@ -84,8 +85,8 @@ public class Obstaculo extends Sprite{
                 break;
             }
     }
-    public void atualizar(int aleatorio,String nada){
-        switch(aleatorio){
+    public void update(int random,String nada){
+        switch(random){
             case 0:
                 this.y=-150;
                 break;
