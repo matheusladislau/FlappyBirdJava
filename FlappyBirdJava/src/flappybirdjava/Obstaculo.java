@@ -5,7 +5,7 @@ public class Obstaculo extends Sprite{
     double velocidade=0.7;
     int posicao;
     public Obstaculo(int aleatorio,int x) {
-        super(URL.sprite("cano.png"),1);
+        super("src/image/pipe.png",1);
         this.x=x;
         this.posicao=aleatorio;
         switch(aleatorio){
@@ -30,7 +30,7 @@ public class Obstaculo extends Sprite{
         }       
     
     public Obstaculo(int aleatorio,int x,int i){
-        super(URL.sprite("cano2.png"),1);
+        super("src/image/pipe2.png",1);
         this.x=x;
         this.posicao=aleatorio;
         switch(aleatorio){

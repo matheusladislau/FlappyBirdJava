@@ -1,12 +1,9 @@
 package flappybirdjava;
-import jplay.GameImage;
-import jplay.Keyboard;
-import jplay.URL;
 import jplay.Window;
-public class Principal{
+public class Main{
     public static void main(String args[]){
-        Window janela=new Window(800,600);
-        Nivel nivel=new Nivel(janela);
+        Window window=new Window(800,600);
+        Nivel level=new Nivel(window);
     }
         /*
         Window janela=new Window(800,600);

@@ -16,7 +16,7 @@ public class Nivel{
     public int nobstaculos=4;
     private Obstaculo[] obstaculos=new Obstaculo[nobstaculos];
     private boolean vivo=true;
-    Som musica=new Som();
+    Music musica=new Music();
     int a=0;
     Random gerador = new Random();
     public int pontos=0;
@@ -30,7 +30,7 @@ public class Nivel{
     public Nivel(Window window){
         this.janela=window;
         teclado=janela.getKeyboard();
-        imagem_fundo=new GameImage(URL.sprite("fundojogo.png"));
+        imagem_fundo=new GameImage("src/image/background.png");
         jogador=new Jogador(25,250);
         mostrarPontos(janela);
         
