@@ -1,9 +1,9 @@
 # FlappyBirdJava
 [English]
-    *** You already can play the game, just execute the 'FlappyBirdJava.jar' file in: 'src/dist/'. ***
+    *** You already can play the game, just open the project in an IDE (Netbeans recommended). ***
 
     Replica of the game Flappy Bird developed in language Java in open-source using library JPlay.
-    I do not own the game idea, sound effects or image.
+    I do not own the game idea, sound effects or image. Just an open-source game for fun.
 
     Java Source: Matheus Ladislau Ribeiro 
         (matheusladislauribeiro@gmail.com)
@@ -15,10 +15,10 @@
     JPlay Library: Gefersom C. Lima. (gefersom (at) gmail.com)
 
 [Português]
-    *** Já possível para jogar, apenas execute o arquivo 'FlappyBirdJava.jar' encontrado em: 'src/dist/'. ***
+    *** Já possível apenas abrindo o projeto em alguma IDE (aconselhável Netbeans) ***
 
     Réplica do jogo Flappy Bird desenvolvido em código aberto utilizando linguagem de programação Java e biblioteca JPlay.
-    Não possuo direito sobre a ideia do jogo, efeitos sonoros ou imagens disponíveis.
+    Não possuo direito sobre a ideia do jogo, efeitos sonoros ou imagens disponíveis. Apenas jogo em código-aberto para diversão.
 
     Código-fonte Java: Matheus Ladislau Ribeiro 
         (matheusladislauribeiro@gmail.com)
